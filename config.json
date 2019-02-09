@@ -1,0 +1,53 @@
+{
+    "https": {
+        "name": "Web server",
+        "ip": "127.0.0.1",
+        "port": 8100
+    },
+    "ctrs": {
+        "name": "Connector server",
+        "ip": "127.0.0.1",
+        "port": 8101
+    },
+    "webu": {
+        "name": "Untrusted web server",
+        "ip": "127.0.0.1",
+        "port": 8120,
+        "cacert": "certs/ca-crt.pem",
+        "cert": "certs/server-crt.pem",
+        "key": "certs/server-key.pem"
+    },
+    "webt": {
+        "name": "Trusted web server",
+        "ip": "127.0.0.1",
+        "port": 8130,
+        "cacert": "certs/ca-crt.pem",
+        "cert": "certs/server-crt.pem",
+        "key": "certs/server-key.pem",
+        "needcc": true
+    },
+    "c2cs": {
+        "name": "C2C Server",
+        "ip": "127.0.0.1",
+        "port": 8004,
+        "cacert": "certs/ca-crt.pem",
+        "cert": "certs/server-crt.pem",
+        "key": "certs/server-key.pem"
+    },
+    "peer": {
+        "name": "C2C Peer",
+        "ip": "127.0.0.1",
+        "port": 8005,
+        "cacert": "certs/ca-crt.pem",
+        "cert": "certs/client-crt.pem",
+        "key": "certs/client-key.pem"
+    },
+    "ptld": {
+        "name": "Portal",
+        "ip": "127.0.0.1",
+        "port": 8002,
+        "cacert": "certs/ca-crt.pem",
+        "cert": "certs/client-crt.pem",
+        "key": "certs/client-key.pem"
+    }
+}
