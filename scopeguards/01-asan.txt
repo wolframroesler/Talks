@@ -1,0 +1,22 @@
+$ ./sdbtestp-smgw -t webserver/cfilter
+Running 1 test case...
+
+=================================================================
+==17569==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 272 byte(s) in 2 object(s) allocated from:
+    #0 0x7f12ab6aed98 in calloc (/usr/lib/x86_64-linux-gnu/libasan.so.5+0xedd98)
+    #1 0x7f12ab386490 in mysql_stmt_result_metadata /home/wolfram/mariadb-connector-c/mariadb-connector-c-3.0.7-src/libmariadb/mariadb_stmt.c:2166
+
+SUMMARY: AddressSanitizer: 272 byte(s) leaked in 2 allocation(s).
+
+=================================================================
+==17903==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 136 byte(s) in 1 object(s) allocated from:
+    #0 0x7fc24d63bd98 in calloc (/usr/lib/x86_64-linux-gnu/libasan.so.5+0xedd98)
+    #1 0x7fc24d313490 in mysql_stmt_result_metadata /home/wolfram/mariadb-connector-c/mariadb-connector-c-3.0.7-src/libmariadb/mariadb_stmt.c:2166
+
+SUMMARY: AddressSanitizer: 136 byte(s) leaked in 1 allocation(s).
+
+*** No errors detected
