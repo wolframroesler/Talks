@@ -3,9 +3,9 @@
 
 
 
-            Wolfram Rösler
+                        Wolfram Rösler
 
 
 
 
-    https://gitlab.com/wolframroesler/Talks/TBD
+https://gitlab.com/wolframroesler/Talks/tree/master/scopeguards
