@@ -2,6 +2,7 @@
 
 These are slides for various talks I've done.
 
+* `aaa.odp`, `aaa.pdf`: Talk about C++ "Almost Always Auto" style
 * `const.odp`, `const.pdf`: Talk about const placement in C++
 * `profiling.odt`: Talk about a simple C++14 profiling class
 * `scopeguards`: Talk about Boost scope guards and why to use them
